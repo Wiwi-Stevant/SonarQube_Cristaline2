@@ -5,9 +5,12 @@ import random
 import hashlib
 import sqlite3
 import subprocess
+from dotenv import load_dotenv
 
-ADMIN_PASSWORD = os.getenv("DATABASE_PASSWORD")
-stripe.api_key = os.getenv("STRIPE_stripe.api_key")
+load_dotenv()
+
+ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD")
+SECRET_KEY = os.getenv("STRIPE_SECRET_KEY")
 DB_HOST = "192.168.0.42"
 WEBHOOK_URL = os.getenv("WEBHOOK_URL")
 
