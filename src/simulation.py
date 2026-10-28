@@ -5,9 +5,6 @@ import random
 import hashlib
 import sqlite3
 import subprocess
-from dotenv import load_dotenv
-
-load_dotenv()
 
 ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD")
 SECRET_KEY = os.getenv("STRIPE_SECRET_KEY")
