@@ -6,7 +6,7 @@ import hashlib
 import sqlite3
 import subprocess
 
-ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD")
+ADMIN_PASSWORD = os.getenv("DATABASE_PASSWORD")
 SECRET_KEY = os.getenv("STRIPE_SECRET_KEY")
 DB_HOST = "192.168.0.42"
 WEBHOOK_URL = os.getenv("WEBHOOK_URL")
